@@ -42,3 +42,4 @@ package-lock.json
 
 # Optional lock files for Yarn
 yarn.lock
+.vscode
