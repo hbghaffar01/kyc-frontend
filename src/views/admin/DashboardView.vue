@@ -97,6 +97,7 @@ const handleSubmit = async (formData) => {
     } else {
       await kycStore.submitKyc(formData);
     }
+    await kycStore.getKycsList();
   } catch (error) {
     console.error(
       isUpdating.value ? "KYC update failed" : "KYC submission failed",

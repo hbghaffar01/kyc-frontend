@@ -57,6 +57,7 @@ export const useKycStore = defineStore("kyc", {
         this.kycData = response;
         this.kycStatus = response.status;
         this.submitSuccess = true;
+        setLoading(false);
         return response;
       } catch (error) {
         this.error = error.response?.message || "KYC submission failed";
